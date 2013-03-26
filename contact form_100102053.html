@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contact form</title>
+
+</head>
+
+<body>
+<h2>Contact form</h2>
+<form action="https://docs.google.com/spreadsheet/formResponse?formkey=dDhFdFBITDc2X3FaUGNPaGRWb29mNlE6MQ&ifq" method="POST">
+<p>
+<strong><label for="id">hidden_id</label></strong>
+</p>
+<p>
+<input type="hidden" name="entry.0.single" value="100102053" 
+id="id" placeholder="學號">
+</p>
+
+<strong><label for="gender">Gender</label></strong>
+<p>
+<input type="radio" name="entry.1.group" value="Boy" id="gender">Boy<br>
+<input type="radio" name="entry.1.group" value="Girl" id="gender">Girl
+</p>
+<p>
+<strong><label for="foods">Favorite Foods</label></strong>
+</p>
+<p>
+<input type="checkbox" name="entry.2.gorup" value="apple" id="foods">Apple<br>
+<input type="checkbox" name="entry.2.group" value="banana" id="foods">Banana<br>
+<input type="checkbox" name="entry.2.group" value="lemon" id="foods">Lemon<br>
+<input type="checkbox" name="entry.2.group" value="watermelon" id="foods">Watermelon<br>
+</p>
+<p>
+<strong><label for="rel">Relationship</label></strong>
+</p>
+<select name="entry.3.single" id="rel">
+<option>single</option>
+<option>dating</option>
+<option>married</option>
+<option>hard to explain</option>
+</select>
+<p>
+<strong><label for="mail">Email</label></strong>
+<br>
+<input type="email" name="entry.4.single" id="mail" >
+<p>
+<strong><label for="com">Comments</label></strong>
+<br>
+<textarea cols="80" rows="8" name="entry.5.single" id="com" ></textarea>
+</p>
+<input type="submit" value="提交">
+
+
+
+</body>
+</html>
