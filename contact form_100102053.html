@@ -2,57 +2,87 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Contact form</title>
+<title class=title>Contact form</title>
+
+<style type="text/css">
+h2{
+	color:#FFF;
+	margin:30px 100px;
+	text-align:center;
+	}
+
+body {
+	background-color:#000;
+	 }
+	 
+div {
+	margin:30px 400px;
+	border:solid #F36 ;	
+	text-align:justify;
+	background-color:#F39;
+	border-radius:5%;
+		}
+
+	
+</style>
 
 </head>
 
 <body>
-<h2>Contact form</h2>
-<form action="https://docs.google.com/spreadsheet/formResponse?formkey=dDhFdFBITDc2X3FaUGNPaGRWb29mNlE6MQ&ifq" method="POST">
-<p>
-<strong><label for="id">hidden_id</label></strong>
-</p>
-<p>
-<input type="hidden" name="entry.0.single" value="100102053" 
-id="id" placeholder="學號">
-</p>
 
-<strong><label for="gender">Gender</label></strong>
-<p>
+<span>
+
+<h2>Contact form</h2>
+<form action=	 "https://docs.google.com/spreadsheet/formResponse?formkey=dDhFdFBITDc2X3FaUGNPaGRWb29mNlE6MQ&ifq" method="POST">
+	
+<div>
+<strong><label for="id">hidden_id</label></strong>
+<input type="hidden" name="entry.0.single" value="100102053" id="id" placeholder="學號">
+</div>
+
+<div>
+<strong><label for="gender">Gender</label></strong> <br>
 <input type="radio" name="entry.1.group" value="Boy" id="gender">Boy<br>
 <input type="radio" name="entry.1.group" value="Girl" id="gender">Girl
-</p>
-<p>
-<strong><label for="foods">Favorite Foods</label></strong>
-</p>
-<p>
+</div>
+
+<div>
+<strong><label for="foods">Favorite Foods</label></strong><br>
 <input type="checkbox" name="entry.2.gorup" value="apple" id="foods">Apple<br>
 <input type="checkbox" name="entry.2.group" value="banana" id="foods">Banana<br>
 <input type="checkbox" name="entry.2.group" value="lemon" id="foods">Lemon<br>
 <input type="checkbox" name="entry.2.group" value="watermelon" id="foods">Watermelon<br>
-</p>
-<p>
-<strong><label for="rel">Relationship</label></strong>
-</p>
+</div>
+
+<div>
+<strong><label for="rel">Relationship</label></strong><br>
 <select name="entry.3.single" id="rel">
 <option>single</option>
 <option>dating</option>
 <option>married</option>
 <option>hard to explain</option>
 </select>
-<p>
+</div>
+
+<div>
 <strong><label for="mail">Email</label></strong>
 <br>
 <input type="email" name="entry.4.single" id="mail" required >
-<p>
+</div>
+
+<div>
 <strong><label for="com">Comments</label></strong>
 <br>
-<textarea cols="80" rows="8" name="entry.5.single" id="com" ></textarea>
-</p>
-<input type="submit" name="submit" value="提交">
-</p>
-</form>
+<textarea cols="40" rows="8" name="entry.5.single" id="com" ></textarea>
+</div>
 
+<div>
+<input type="submit" name="submit" value="提交">
+</div>
+
+
+</form>
+</span>
 
 </body>
 </html>
