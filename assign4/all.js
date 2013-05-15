@@ -71,10 +71,10 @@ var scity = {
         $("#method1").append(a);
          a = [];
            var d;
-//        for (d in city) a.push("<option>" + city[d] + "</option>");
+        for (d in scity) a.push("<option>" +d + "</option>");
         $("#citybox1").append(a);
-        $("#citybox1").trigger("change");
-      //  $(".selectpicker").selectpicker()
+        $("#citybox2").trigger("change");
+
     }, updateWeather = function (a) {
         $.getJSON("http://query.yahooapis.com/v1/public/yql?format=json&q=select * from weather.forecast where woeid=" + a, {}, function (a, d) {
             console.log("data", a);
