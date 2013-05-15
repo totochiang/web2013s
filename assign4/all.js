@@ -87,7 +87,7 @@ var scity = {
                 u = b.condition.text;
 $("#result #title").text(e);
 $("#result #location").text(f);
-$("#result #temp").text(h +"度");
+$("#result #temp").text(h +"°F");
 $("#result #text").text(u);
 $("#result #date").text(g);
 
