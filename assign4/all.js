@@ -73,7 +73,7 @@ var scity = {
            var d;
         for (d in scity) a.push("<option>" +d + "</option>");
         $("#citybox1").append(a);
-        $("#citybox2").trigger("change");
+        $("#citybox1").trigger("change");
 
     }, updateWeather = function (a) {
         $.getJSON("http://query.yahooapis.com/v1/public/yql?format=json&q=select * from weather.forecast where woeid=" + a, {}, function (a, d) {
@@ -102,6 +102,7 @@ $("#citybox1").change(function () {
         c = [],
         d = cityToWoeid[scity[a][0]],
         b;
+        console.log(a);
     for (b in scity[a]) c.push("<option>" + scity[a][b] + "</option>");
     $("#citybox2").children().remove();
     $("#citybox2").append(c);

@@ -4,19 +4,27 @@
 <head>
 <meta charset="utf-8">
 <title>Assign4</title>
+<link href="bootstrap.min.css" rel="stylesheet">
 </head>
 
 
 <body>
 
 	<div class="container">
-		<div id="method1"></div>
+		<div class="row">
+			<div class="span6">
+		
 
-		<div id="method2"></div>
+		<h2>Function1</h2>
+		<div  id="method1"></div>
+		<h2>Function2</h2>
+		<div  id="method2"></div>
 			<select id="citybox1"></select>
 			<select id="citybox2"></select>
+</div>
 
-		<div id="result">
+		<div class="span6" id="result">
+			<h1>Condition</h1>
 			<h2>Title</h2>
 			<div id="title"></div>
 			<h2>Location</h2>
@@ -29,6 +37,10 @@
 			<div id="date"></div>
 
 		</div>
+
+
+
+		</div>
 	</div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
@@ -39,7 +51,7 @@
             window.onload = function() {
                 cityInit();
             };
-        </script>
+</script>
 
 
 </body>
