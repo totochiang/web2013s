@@ -9,6 +9,23 @@
 	<body>
 		<!--第一步：請先在此加入Facebook應用程式開發所需要的的資源，請參考 https://developers.facebook.com/docs/reference/javascript/ -->
 		<script>
+			window.fbAsyncInit = function() {
+				FB.init({
+					appId: 474204109325636, // Your facebook app id
+					status: true,
+					cookie: true,
+					xfbml: true
+				});
+			}
+			(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=181895091940078";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+		<script>
 			$(window).load(function () {
 				 FB.login(function(response) {
    				     if (response.authResponse) {
