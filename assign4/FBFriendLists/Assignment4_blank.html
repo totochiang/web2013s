@@ -8,11 +8,12 @@
 	</head>
 	<body>
 		<!--第一步：請先在此加入Facebook應用程式開發所需要的的資源，請參考 https://developers.facebook.com/docs/reference/javascript/ -->
-		<script>
+	<div id="fb-root"></div>
+	<script>
 		window.fbAsyncInit = function() {
     // init the FB JS SDK
     		FB.init({
-     		appId      :474204109325636// 'YOUR_APP_ID',                        // App ID from the app dashboard
+     		appId      :474204109325636,// 'YOUR_APP_ID',                        // App ID from the app dashboard
       		channelUrl : 'totochiang.github.io/web2013s/', // Channel file for x-domain comms
       		status     : true,                                 // Check Facebook Login status
       		xfbml      : true                                  // Look for social plugins on the page
