@@ -16,7 +16,7 @@
      					FB.api('/me', function(response) {
        					  console.log('Good to see you, ' + response.name + '.');
        					  loginDialog();
-    					 });
+    					 },{ scope: ''});
    					} else {
      					   console.log('User cancelled login or did not fully authorize.');
    					  }
@@ -42,7 +42,7 @@
     				var uid = response.authResponse.userID;
     				var accessToken = response.authResponse.accessToken;
   				} else if (response.status === 'not_authorized') {
-   					alert ("You has not authenticated this app.");
+   					alert ("Please authorize this app.");
    					window.location.reload();
    					 // the user is logged in to Facebook, 
    					 // but has not authenticated your app
@@ -84,7 +84,13 @@
 				*/
 				//We have listed all your friends without any list categories.
 				//Try to use the api to retrieve our friend lists and display them in the website
-				
+				var temptitle = prompt("Enter the name of your new friend list");
+
+				if(temptitle){
+
+				    FB.api('me/friendlists', 'post', {name: temptitle}, function(res){
+
+				}
 					
 			}
 			
